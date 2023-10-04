@@ -12,16 +12,24 @@ public class Variables : MonoBehaviour
 
     //private Global/Member Variables
     private int _collectableAmount = 0;
-    
+    private float _horizontalInput = 0f;
+    private string _username = "rizzler";
+    private bool _GameOver = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Score = 0; // Assigning Global/Member Variable
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Vector3 startPosition = transform.position;
+
+
+        float verticalInput = Input.GetAxis("Vertical");
     }
-}
+
+    
+
+}    
